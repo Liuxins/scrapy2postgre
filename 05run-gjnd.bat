@@ -1,3 +1,3 @@
 D:
 cd D:\projects\scrapy2postgre
-activate scrapy && scrapy crawl gjnd --loglevel=ERROR
+activate analysis && scrapy crawl gjnd --loglevel=ERROR

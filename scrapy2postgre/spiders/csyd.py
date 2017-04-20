@@ -2,7 +2,6 @@
 import scrapy
 import json
 from scrapy.http import Request
-
 from scrapy2postgre.items import zbfl, zbmeta as ZbMeta, zbdata as ZbData
 
 

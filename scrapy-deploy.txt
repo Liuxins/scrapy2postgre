@@ -1,0 +1,22 @@
+
+#部署所有工程
+scrapyd-deploy -a -p stats
+#spider统计
+curl http://192.168.31.200:6800/daemonstatus.json
+#部署spider
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=csyd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=fsjd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=fsnd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=fsyd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=gjnd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=gjyd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=gjydsc 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=gjydsdj 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=hgjd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=hgnd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=hgyd 
+curl http://192.168.31.200:6800/schedule.json -d project=stats -d spider=zgzw 
+#取消执行
+kill -9 pid
+
+curl http://192.168.31.200:6800/delversion.json -d project=stats -d version=1492697584
